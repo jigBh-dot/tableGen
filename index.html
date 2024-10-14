@@ -3,17 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Genrator</title>
+    <title>Advanced Table Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="Heading"> Table Generator</h1>
+    <h1 class="Heading">Advanced Table Generator</h1>
     <div class="container">
-    <label for="input">Enter Number Here</label>
-    <input type="number" id="input">
-    <button id="btn" onclick="getTable()">Get Table</button>
-</div>
-<h1 id="head"></h1>
+        <label for="input">Enter Number Here</label>
+        <input type="number" id="input" min="1" max="100" placeholder="Enter a number">
+        
+        <label for="range">Choose Table Range:</label>
+        <input type="number" id="range" min="1" value="10" max="100" placeholder="Up to">
+
+        <label for="step">Step:</label>
+        <input type="number" id="step" min="1" value="1" max="10" placeholder="Increment">
+        
+        <label for="operation">Choose Operation:</label>
+        <select id="operation">
+            <option value="multiplication">Multiplication</option>
+            <option value="addition">Addition</option>
+            <option value="subtraction">Subtraction</option>
+            <option value="division">Division</option>
+            <option value="square">Square</option>
+            <option value="cube">Cube</option>
+            <option value="exponentiation">Exponentiation</option>
+            <option value="percentage">Percentage</option>
+            <option value="decimal">Decimal Multiplication</option>
+        </select>
+
+        <button id="btn" onclick="getTable()">Get Table</button>
+        <button id="reset" onclick="resetTable()">Reset</button>
+    </div>
+
+    <div id="tableContainer">
+        <h2>Generated Table</h2>
+        <h1 id="head"></h1>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>

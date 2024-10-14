@@ -1,43 +1,73 @@
+/* General Styling */
 body {
-    background-color: red;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-
+/* Heading */
 .Heading {
-    text-align: center;
-    border: 1px solid white;
-    border-radius: 10px;
+    color: #5c5cff;
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+
+/* Container Styling */
+.container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container input, .container select, .container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Buttons */
+button {
+    background-color: #4CAF50;
     color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Table Container */
+#tableContainer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #head {
-    color: black;
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
 }
 
 label {
     font-weight: bold;
-    font-size: 1.5rem;
-    color: white;
-}
-
-input {
-    background-color: burlywood;
-    border: 1px solid transparent;
-    padding: 5px 10px;
-    margin: 10px;
-}
-
-button {
-    padding: 5px 10px;
-    background-color: burlywood;
-    color: white;
-    border: 1px solid transparent;
-    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
 }

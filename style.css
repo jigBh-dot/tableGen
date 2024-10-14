@@ -1,0 +1,43 @@
+body {
+    background-color: red;
+}
+
+
+.Heading {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+#head {
+    color: black;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+
+input {
+    background-color: burlywood;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: burlywood;
+    color: white;
+    border: 1px solid transparent;
+    font-size: 1rem;
+}
